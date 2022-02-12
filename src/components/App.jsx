@@ -1,13 +1,19 @@
+// react
 import React from "react";
 import { Route, useLocation } from "react-router-dom";
-// Components
+// components
 import NavbarComponent from "./navbar";
 import HomeComponent from "./home";
 import DestinationComponent from "./destination";
 import CrewComponent from "./crew";
 import TechComponent from "./technology";
+// stylesheets
+import "../scss/index.scss";
 
 const AppComponent = () => {
+  const URL =
+    "https://raw.githubusercontent.com/Fernando0654/FEM_1_Tip_Calculator/main/data_fem_13.json";
+
   const getData = async () => {
     const response = await fetch(URL);
     const data = await response.json();
