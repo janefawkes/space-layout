@@ -8,7 +8,7 @@ const HomeComponent = () => {
       <div className="title-home">
         <h1>
           <span className="title">
-            S O, Y O U&nbsp;&nbsp;W A N T&nbsp;&nbsp;T O&nbsp;&nbsp;T R A V E
+            S O,&nbsp;&nbsp;Y O U&nbsp;&nbsp;W A N T&nbsp;&nbsp;T O&nbsp;&nbsp;T R A V E
             L&nbsp;&nbsp;T O
           </span>
           <span className="subtitle">SPACE</span>
