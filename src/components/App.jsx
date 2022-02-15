@@ -10,6 +10,8 @@ import TechComponent from "./technology";
 // stylesheets
 import "../scss/index.scss";
 
+// warning: routes to be refactored for react >v16.8
+
 const AppComponent = () => {
   const URL = "https://raw.githubusercontent.com/Fernando0654/FEM_1_Tip_Calculator/main/data_fem_13.json";
   const getData = async () => {

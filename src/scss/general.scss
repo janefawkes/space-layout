@@ -1,4 +1,16 @@
 @use "./util/mixins" as mixin;
+
+:root {
+  // colors
+  $clr-dark: hsl(230 35% 7%);
+  $clr-light: hsl(231 77% 90%);
+  $clr-white: hsl(0 0% 100%);
+
+  // scrollbar
+  $scrollbar-thumb: #ccc;
+  $scrollbar-thumb-active: #999999;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -11,30 +23,25 @@ body::-webkit-scrollbar {
   display: block;
 }
 
-/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
 body::-webkit-scrollbar-thumb {
   background: #ccc;
   border-radius: 4px;
 }
 
-/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
 body::-webkit-scrollbar-thumb:hover {
   background: #b3b3b3;
   box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-/* Cambiamos el fondo cuando esté en active */
 body::-webkit-scrollbar-thumb:active {
   background-color: #999999;
 }
 
-/* Ponemos un color de fondo y redondeamos las esquinas del track */
 body::-webkit-scrollbar-track {
   background: #e1e1e1;
   border-radius: 4px;
 }
 
-/* Cambiamos el fondo cuando esté en active o hover */
 body::-webkit-scrollbar-track:hover,
 body::-webkit-scrollbar-track:active {
   background: #d4d4d4;
@@ -64,7 +71,7 @@ a {
   background-attachment: fixed;
   min-height: 100vh;
   transition: 0.5s ease;
-  background-color: rgb(22, 21, 21);
+  background-color: hsl(var(clr-dark));
 }
 
 .main.destination {
@@ -89,7 +96,7 @@ a {
 }
 
 .glide__bullet--active {
-  border-bottom: 2px solid white !important;
+  border-bottom: 2px solid hsl(var(clr-white)) !important;
 }
 
 .loading {

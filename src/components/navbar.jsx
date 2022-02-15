@@ -6,7 +6,6 @@ import icono from "../assets/shared/logo.svg";
 import closeIcon from "../assets/shared/icon-close.svg";
 import openIcon from "../assets/shared/icon-hamburger.svg";
 
-
 const NavbarComponent = ({ currentRoute }) => {
   const [isShowing, setIsShowing] = useState(false);
   return (
